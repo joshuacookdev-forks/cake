@@ -356,11 +356,11 @@ namespace Cake.Common.Tests.Unit.Tools.GitVersion
             }
 
             [Theory]
-            [InlineData(GitVersionVerbosity.None, nameof(Verbosity.Quiet))]
-            [InlineData(GitVersionVerbosity.Debug, nameof(Verbosity.Diagnostic))]
-            [InlineData(GitVersionVerbosity.Info, nameof(Verbosity.Verbose))]
-            [InlineData(GitVersionVerbosity.Warn, nameof(Verbosity.Normal))]
-            [InlineData(GitVersionVerbosity.Error, nameof(Verbosity.Minimal))]
+            [InlineData(GitVersionVerbosity.Quiet, nameof(Verbosity.Quiet))]
+            [InlineData(GitVersionVerbosity.Diagnostic, nameof(Verbosity.Diagnostic))]
+            [InlineData(GitVersionVerbosity.Verbose, nameof(Verbosity.Verbose))]
+            [InlineData(GitVersionVerbosity.Normal, nameof(Verbosity.Normal))]
+            [InlineData(GitVersionVerbosity.Minimal, nameof(Verbosity.Minimal))]
             public void Should_Add_Verbosity_To_Arguments_If_Set(GitVersionVerbosity verbosity, string arg)
             {
                 // Given
